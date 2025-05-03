@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff's Form Pactice</title>
+</head>
+<body>
+
+    <form action="/submit" method="post">
+
+        <!-- Name Input -->
+
+            <label for="name">Name:</label>
+
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required> <br>
+
+        <!-- Email Input -->
+            
+            <label for="email">Email:</label>
+   
+            <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /> <br>
+
+        <!-- Password Input -->
+
+            <label for="password">Password:</label>
+
+            <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" maxlength="20" required>
+
+        <!-- Feedback Input -->
+
+        <fieldset style="max-width: max-content;">
+
+            <label for="country">Country:</label>
+
+            <select id="country" name="country">
+
+            <option value="us">United States</option>
+
+            <option value="ca" selected>Canada</option>
+
+            <option value="uk">United Kingdom</option>
+            
+        </select>
+
+        </fieldset>
+
+        <!-- Preferred Contact Method Input -->
+
+        <fieldset style="max-width: max-content;">
+
+            <legend>Preferred Contact Method:</legend>
+
+            <label for="email">
+
+                <input type="radio" id="email" name="contact" value="email" checked>
+         Email
+            </label>
+
+            <label for="phone">
+
+                <input type="radio" id="phone" name="contact" value="phone">
+         Phone
+            </label>
+
+         </fieldset>
+
+         <!-- Additional Features of Interest Input -->
+
+         <fieldset style="max-width: max-content;">
+
+            <legend>Choose Your Interests:</legend>
+
+            <label for="coding">
+
+                <input type="checkbox" id="coding" name="interests" value="coding" checked> Coding
+
+            </label>
+
+            <label for="design">
+
+                <input type="checkbox" id="design" name="interests" value="design"> Design
+
+            </label>
+
+         </fieldset>
+         
+            <!-- Comments Input -->
+
+            <label for="message">Message:</label> <br>
+
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here"></textarea> <br>
+
+
+        <input type="submit" value="Submit">
+
+    </form> 
+
+</body>
+
+</html>
